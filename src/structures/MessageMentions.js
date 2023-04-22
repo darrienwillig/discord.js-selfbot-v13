@@ -37,6 +37,8 @@ class MessageMentions {
      */
     this.everyone = Boolean(everyone);
 
+    users = users?.users ? users.users : users;
+
     if (users) {
       if (users instanceof Collection) {
         /**
